@@ -24,9 +24,13 @@ const getSuma = (a,b) => {
 // Siempre que sea posible es mejor meter todas las funciones, importaciones creación de variables fuera del las Function Component 
 // Es más eficiente y funciona todo mejor y más rápido
 
-const FirstApp = () => {
+const FirstApp = ({title='Hola Soy Rabotron', subTitle, valor }) => {
+  console.log(title);
+
   return (
     <>
+        <h1>Este es una propiedad de props de esta Funcional components: {title}</h1>
+        <h2>Este es eel Valor Numerico con Operación con un Props: {valor*2.5}</h2>
         <h1>Hola este es mi nombre y es una variable: {nombre}</h1>
         <p>Yo soy tu padre</p>
         <h2>Resultado de la Operación 2+2 ={2+2}</h2>

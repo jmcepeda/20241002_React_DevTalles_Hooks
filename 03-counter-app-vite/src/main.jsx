@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App_two, {App} from './HelloWorldApp'
 import FirstApp from './FirstApp'
+import './styles.css'
 
 
 // Create a React component
@@ -18,7 +19,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <App />  {/* Aquí se renderiza el componente */}
         <App_two/>
-        <FirstApp/>
+        <FirstApp title='Props Title Ejemplo Rabito duro' subTitle="Esto es un Ejemplo de Props Props Subtitle" valor={45673}/>
+        {/* Esta es la manera de pasar un número como un props USando llaves {} */}
     </React.StrictMode>
 
 );
