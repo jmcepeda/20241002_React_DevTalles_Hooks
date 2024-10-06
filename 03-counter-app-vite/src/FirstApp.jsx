@@ -3,6 +3,8 @@ const nombre="TroncoMan"
 const newObject={id: 22, name: "Alberto", age:23, Alias: "Al"};
 const newArray=[1,2,3,4,5,6,7,8,9];
 import {malditosBastardos} from './HelloWorldApp'
+import PropTypes from 'prop-types'
+
 
 const getBastardoById = (Id) => {
   return malditosBastardos.find((bastardo)=> {
@@ -24,8 +26,21 @@ const getSuma = (a,b) => {
 // Siempre que sea posible es mejor meter todas las funciones, importaciones creación de variables fuera del las Function Component 
 // Es más eficiente y funciona todo mejor y más rápido
 
+// PropTypes Tipos de las Properties 
+// Esto viene instalado por defecto en VITE
+
 const FirstApp = ({title='Hola Soy Rabotron', subTitle, valor }) => {
   console.log(title);
+
+  // Hacerlo así, es un problema, porque complica mi componente, 
+  // lo hace dificil de leer 
+  // ¿Como obligo a que se exija el que se rellenen los Props
+  // Sin tener que complicar mi componente
+
+  // if(!subTitle) {
+  //   throw new Error("The SubTitle no Exist")
+  // }
+  
 
   return (
     <>
@@ -52,3 +67,9 @@ const FirstApp = ({title='Hola Soy Rabotron', subTitle, valor }) => {
 
 export default FirstApp
 
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string.isRequired,
+  valor: PropTypes.number.isRequired,
+
+}

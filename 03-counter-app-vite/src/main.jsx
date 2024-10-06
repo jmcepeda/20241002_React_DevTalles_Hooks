@@ -14,12 +14,11 @@ import './styles.css'
 // Siempre la primera Letra de los componentes debe ser en mayúscula
 
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <App />  {/* Aquí se renderiza el componente */}
         <App_two/>
-        <FirstApp title='Props Title Ejemplo Rabito duro' subTitle="Esto es un Ejemplo de Props Props Subtitle" valor={45673}/>
+        <FirstApp title='Props Title Ejemplo Rabito duro' ardecor="El Orto de tu Madre" subTitle="Esto es un Ejemplo de Props Props Subtitle" valor={345}/>
         {/* Esta es la manera de pasar un número como un props USando llaves {} */}
     </React.StrictMode>
 
