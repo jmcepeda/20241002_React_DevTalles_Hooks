@@ -19,6 +19,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <App />  {/* Aquí se renderiza el componente */}
         <App_two/>
         <FirstApp title='Props Title Ejemplo Rabito duro' ardecor="El Orto de tu Madre" subTitle="Esto es un Ejemplo de Props Props Subtitle" valor={345}/>
+        <FirstApp title='Este es un Prop de Título de Segundo Comoponente FirstApp' />
+        <FirstApp subTitle='Este es un Prop de SubTítulo de Segundo Comoponente FirstApp' />
+        <FirstApp valor={10000} />
+        <FirstApp valor="Fernando Herrera" />
         {/* Esta es la manera de pasar un número como un props USando llaves {} */}
     </React.StrictMode>
 

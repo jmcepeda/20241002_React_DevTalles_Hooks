@@ -29,7 +29,12 @@ const getSuma = (a,b) => {
 // PropTypes Tipos de las Properties 
 // Esto viene instalado por defecto en VITE
 
-const FirstApp = ({title='Hola Soy Rabotron', subTitle, valor }) => {
+//Es mejor definir los valores popr defecto con los DefaultProperties
+
+
+const FirstApp = (
+  {title, subTitle, valor 
+  }) => {
   console.log(title);
 
   // Hacerlo así, es un problema, porque complica mi componente, 
@@ -45,9 +50,9 @@ const FirstApp = ({title='Hola Soy Rabotron', subTitle, valor }) => {
   return (
     <>
         <h1>Este es una propiedad de props de esta Funcional components: {title}</h1>
-        <h2>Este es eel Valor Numerico con Operación con un Props: {valor*2.5}</h2>
+        <h2>Este es una propiedad de props de esta Funcional components: {subTitle}</h2>
+        <h2>Este es el Valor Numerico con Operación con un Props: {valor*2.5}</h2>
         <h1>Hola este es mi nombre y es una variable: {nombre}</h1>
-        <p>Yo soy tu padre</p>
         <h2>Resultado de la Operación 2+2 ={2+2}</h2>
         <h3>Propiedades de un Elemento: {newObject.name}</h3>
         <h4>Este es el resultado de un array. Coloca elementos Independientes: {newArray}</h4>
@@ -60,16 +65,23 @@ const FirstApp = ({title='Hola Soy Rabotron', subTitle, valor }) => {
         <p>name: <b>{getBastardoById(2).name}</b></p>
         <p>owner: <b>{getBastardoById(2).owner}</b></p>
         <p>Este es el resultado de sumar dos Números: <b>{getSuma(4,6)}</b></p>
-
     </>
   )
 }
 
 export default FirstApp
 
+
+// Tanto los PropTypes como los defaultProps se colocan siempre al final del documento. Esto es lo que dice el Estandar ES6
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   valor: PropTypes.number.isRequired,
-
 }
+
+FirstApp.defaultProps = {
+  title: 'No hay Título con DefaultProps',
+  subTitle: 'No hay Subtítulo con defaultProps',
+  valor: 0.1,
+
+};
