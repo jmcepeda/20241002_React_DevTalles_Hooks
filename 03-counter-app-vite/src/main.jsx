@@ -2,7 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App_two, {App} from './HelloWorldApp'
 import FirstApp from './FirstApp'
+import { CounterApp } from './CounterApp'
+
 import './styles.css'
+
 
 
 // Create a React component
@@ -16,6 +19,8 @@ import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
+        {/* Para Mandar Prop como un número, hay que meter el valor entre corchetes, si se manda entre comillas el Prop se enviará como un String */}
+        <CounterApp value={55}/>
         <App />  {/* Aquí se renderiza el componente */}
         <App_two/>
         <FirstApp title='Props Title Ejemplo Rabito duro' ardecor="El Orto de tu Madre" subTitle="Esto es un Ejemplo de Props Props Subtitle" valor={345}/>
