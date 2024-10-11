@@ -5,6 +5,7 @@ import FirstApp from './FirstApp'
 import { CounterApp } from './CounterApp'
 
 import './styles.css'
+import { CounterAppJMC } from './CounterAppJMC'
 
 
 
@@ -20,6 +21,7 @@ import './styles.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         {/* Para Mandar Prop como un número, hay que meter el valor entre corchetes, si se manda entre comillas el Prop se enviará como un String */}
+        <CounterAppJMC value={100}/>
         <CounterApp value={55}/>
         <App />  {/* Aquí se renderiza el componente */}
         <App_two/>
@@ -27,7 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <FirstApp title='Este es un Prop de Título de Segundo Comoponente FirstApp' />
         <FirstApp subTitle='Este es un Prop de SubTítulo de Segundo Comoponente FirstApp' />
         <FirstApp valor={10000} />
-        <FirstApp valor="Fernando Herrera" />
+        <FirstApp valor={10000} />
         {/* Esta es la manera de pasar un número como un props USando llaves {} */}
     </React.StrictMode>
 

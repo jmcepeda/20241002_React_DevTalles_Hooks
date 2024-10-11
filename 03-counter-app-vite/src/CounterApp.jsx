@@ -16,10 +16,10 @@ const handleAppOut = (event) => {
 export const CounterApp = ({value}) => {
   
   // Aqui lo que estoy haciendo es desectrucurar la salida de la funcion useState en un array
-  const [counter_v0,setCounter_v0]=useState(0)
-  const [counter_v1,setCounter_v1]=useState(1)
-  const [counter_v2,setCounter_v2]=useState(10)
-  const [counter_v3,setCounter_v3]=useState(100)
+  const [counter_v0,setCounter_v0]=useState(value)
+  const [counter_v1,setCounter_v1]=useState(value)
+  const [counter_v2,setCounter_v2]=useState(value)
+  const [counter_v3,setCounter_v3]=useState(value)
 
   
   const handleAppIn = () => {
@@ -71,10 +71,8 @@ export const CounterApp = ({value}) => {
   
   return (
     <>
-
-
-      <h2>counter - useState_v0: { counter_v0 }</h2>
       <h1>CounterApp</h1>
+      <h2>counter - useState_v0: { counter_v0 }</h2>
       <h2>counter - useState_v1: { counter_v1 }</h2>
       <br />
       <h2>counter - useState_v2: { counter_v2 }</h2>

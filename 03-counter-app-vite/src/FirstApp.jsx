@@ -76,7 +76,7 @@ export default FirstApp
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
-  valor: PropTypes.number.isRequired,
+  valor: PropTypes.number,
 }
 
 FirstApp.defaultProps = {
