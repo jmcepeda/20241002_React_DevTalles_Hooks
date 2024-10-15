@@ -16,9 +16,10 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "react",
+    "jest"
   ],
   "rules": {
-    // Añade reglas personalizadas aquí si es necesario
+    // Aquí puedes agregar tus reglas personalizadas
   }
 }

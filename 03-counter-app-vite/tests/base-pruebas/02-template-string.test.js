@@ -5,6 +5,8 @@ describe("Test Template-String", () => {
   test("la funcion getSaludo debe devolver 'Hola Fernando'", () => {
     // Aquí puedes implementar las pruebas para la función getSaludo
     const nombre = "Fernando";
-    expect(getSaludo(nombre)).toBe(`Hola ${nombre}`);
+    const result = getSaludo(nombre);
+    // console.log(result);
+    expect(result).toBe(`Hola ${nombre}`);
   });
 });
