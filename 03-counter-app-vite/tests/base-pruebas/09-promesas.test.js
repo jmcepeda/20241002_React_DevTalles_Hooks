@@ -17,11 +17,16 @@ describe("Vamos a Probar Fichero 09-promesas. Para trabajar con funciones asincr
 
   test("Vamos a probar que la función Asincróna getHeroeByIdAsync Funciona Correctamente bien también cuando no hay resultado", (done) => {
     const id = 100;
-    getHeroeByIdAsync(id).catch((error) => {
-      console.log(error);
-      //   expect(error).toEqual();
-      done();
-    });
+    getHeroeByIdAsync(id)
+      .then((heroe) => {
+        expect(heroe).toBeFalsy();
+        done();
+      })
+      .catch((error) => {
+        console.log(error);
+        expect(error).toBe("No se encontró el Héroe con el Id: " + id);
+        done();
+      });
   });
   // console.log(heroe);
 
