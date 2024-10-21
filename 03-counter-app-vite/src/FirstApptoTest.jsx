@@ -33,7 +33,7 @@ const getSuma = (a,b) => {
 //Es mejor definir los valores popr defecto con los DefaultProperties
 
 
-const FirstApptoTest = ({title, subTitle, valor }) => {
+const FirstApptoTest = ({title='No hay Título con DefaultProps', subTitle='No hay Subtítulo con defaultProps', valor=0.1 }) => {
   
   console.log(title);
 
@@ -80,9 +80,9 @@ FirstApptoTest.propTypes = {
   valor: PropTypes.number,
 }
 
-FirstApptoTest.defaultProps = {
-  title: 'No hay Título con DefaultProps',
-  subTitle: 'No hay Subtítulo con defaultProps',
-  valor: 0.1,
+// FirstApptoTest.defaultProps = {
+//   title: 'No hay Título con DefaultProps',
+//   subTitle: 'No hay Subtítulo con defaultProps',
+//   valor: 0.1,
 
-};
+// };
