@@ -1,4 +1,5 @@
 
+import React from 'react';
 const nombre="TroncoMan"
 const newObject={id: 22, name: "Alberto", age:23, Alias: "Al"};
 const newArray=[1,2,3,4,5,6,7,8,9];

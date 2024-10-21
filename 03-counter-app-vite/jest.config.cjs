@@ -2,7 +2,8 @@ module.exports = {
   transform: {
     "^.+\\.jsx?$": "babel-jest", // Usar babel-jest para archivos JS/JSX
   },
-  testEnvironment: "node",
+  // testEnvironment: "node",
+  testEnvironment: "jsdom",
   moduleFileExtensions: ["js", "jsx"],
 };
 
