@@ -49,7 +49,7 @@ const FirstApptoTest = ({title='No hay Título con DefaultProps', subTitle='No h
 
   return (
     <>
-        <h1>Este es una propiedad de props de esta Funcional components: {title}</h1>
+        <h1> {title} </h1>
         <h2>Este es una propiedad de props de esta Funcional components: {subTitle}</h2>
         <h2>Este es el Valor Numerico con Operación con un Props: {valor*2.5}</h2>
         <h1>Hola este es mi nombre y es una variable: {nombre}</h1>
