@@ -33,7 +33,7 @@ const getSuma = (a,b) => {
 //Es mejor definir los valores popr defecto con los DefaultProperties
 
 
-const FirstApptoTest = ({title='No hay Título con DefaultProps', subTitle='No hay Subtítulo con defaultProps', valor=0.1 }) => {
+const FirstApptoTest = ({title="No hay Título con DefaultProps", subTitle="No hay Subtítulo con defaultProps", valor=0.1 }) => {
   
   console.log(title);
 
@@ -52,8 +52,9 @@ const FirstApptoTest = ({title='No hay Título con DefaultProps', subTitle='No h
         <h1 data-testid="test-title">{title}</h1>
         <h2>{subTitle}</h2>
         <h3>{subTitle}</h3>
+        {/* <h3>{subTitle}</h3> */}
         <h2>Este es el Valor Numerico con Operación con un Props: {valor*2.5}</h2>
-        <h1>Hola este es mi nombre y es una variable: {nombre}</h1>
+        {/* <h1>Hola este es mi nombre y es una variable: {nombre}</h1> */}
         <h2>Resultado de la Operación 2+2 ={2+2}</h2>
         <h3>Propiedades de un Elemento: {newObject.name}</h3>
         <h4>Este es el resultado de un array. Coloca elementos Independientes: {newArray}</h4>

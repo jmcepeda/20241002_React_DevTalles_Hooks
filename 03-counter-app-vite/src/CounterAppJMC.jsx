@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { useState } from "react"
 
-export const CounterAppJMC = ({value}) => {
+export const CounterAppJMC = ({value=0}) => {
 
 console.log("Render")
   
@@ -43,7 +43,7 @@ CounterAppJMC.propTypes = {
     value: PropTypes.number.isRequired,
 }
 
-CounterAppJMC.defaultProps = {
-    value: 0,
-}
+// CounterAppJMC.defaultProps = {
+//     value: 0,
+// }
 

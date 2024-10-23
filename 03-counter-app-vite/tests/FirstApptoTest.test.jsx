@@ -49,7 +49,8 @@ describe('Vamos a Probar el Componente <FirstApptoTest/>', () => {
       const title="Titulo de Prueba";
       const subtitle="Esto es un Ejemplo de Props Props Subtitle"
       const {getAllByText}=render(<FirstApptoTest title={title} subTitle={subtitle} valor={123456789}/>);
-      console.log("getByText subtitle: ",getAllByText(subtitle))
+      console.log("getByText subtitle: ",getAllByText(subtitle).length)
+      expect(getAllByText(subtitle).length).toBe(2);
       // expect(getByTestId("test-title")).toBe(title);
       
     })

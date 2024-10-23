@@ -6,7 +6,7 @@ import FirstApptoTest from './FirstApptoTest'
 // import { CounterApp } from './CounterApp'
 
 import './styles.css'
-// import { CounterAppJMC } from './CounterAppJMC'
+import { CounterAppJMC } from './CounterAppJMC'
 
 
 
@@ -22,7 +22,7 @@ import './styles.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         {/* Para Mandar Prop como un número, hay que meter el valor entre corchetes, si se manda entre comillas el Prop se enviará como un String */}
-        {/* <CounterAppJMC value={100}/> */}
+        <CounterAppJMC value={100}/>
         {/* <CounterApp value={55}/> */}
         {/* <App />   */}
         {/* Aquí se renderiza el componente */}
