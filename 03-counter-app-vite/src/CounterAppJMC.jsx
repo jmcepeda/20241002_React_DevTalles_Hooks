@@ -33,7 +33,7 @@ const [counter,setCounter]=useState(value)
         <h2>{ counter }</h2>
         <button onClick={()=>{handleCounter(0)}}>+1</button>
         <button onClick={()=>{handleCounter(1)}}>-1</button>
-        <button onClick={()=>{handleCounter(2)}}>Reset</button>
+        <button aria-label="btn-reset" onClick={()=>{handleCounter(2)}}>Reset</button>
 
     </>
   )
