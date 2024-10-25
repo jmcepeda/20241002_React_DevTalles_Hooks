@@ -1,0 +1,74 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Vamos a Probar el Componente <FirstApptoTest/> > Debe de hacer Match con el SnapShot 1`] = `
+<div>
+  <h1
+    data-testid="test-title"
+  >
+    Debe de hacer Match con el SnapShot
+  </h1>
+  <h2>
+    Este es un subtitle para Prueba
+  </h2>
+  <h3>
+    Este es un subtitle para Prueba
+  </h3>
+  <h2>
+    Este es el Valor Numerico con Operación con un Props: 
+    30862.5
+  </h2>
+  <h2>
+    Resultado de la Operación 2+2 =
+    4
+  </h2>
+  <h3>
+    Propiedades de un Elemento: 
+    Alberto
+  </h3>
+  <h4>
+    Este es el resultado de un array. Coloca elementos Independientes: 
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+  </h4>
+  <div>
+    <p>
+      Propiedades de un Objeto en el DOM:
+    </p>
+    <code>
+       
+      {"id":22,"name":"Alberto","age":23,"Alias":"Al"}
+    </code>
+  </div>
+  <h2 />
+  <ol>
+    <b>
+      Este es el Bastardo que he encontrado
+    </b>
+  </ol>
+  <li>
+    name: 
+    <b>
+      Spiderman
+    </b>
+  </li>
+  <li>
+    owner: 
+    <b>
+      Marvel
+    </b>
+  </li>
+  <li>
+    Este es el resultado de sumar dos Números: 
+    <b>
+      10
+    </b>
+  </li>
+</div>
+`;

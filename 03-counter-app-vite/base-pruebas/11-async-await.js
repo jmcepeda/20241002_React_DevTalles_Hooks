@@ -25,8 +25,8 @@ export const getImagenConAPIKey = async () => {
 
 export const getImagenSinAPIKey = async () => {
   try {
-    // const apiKey = "jJjbFssbVLY0evvOTsSibXNMI1VMrtm4";
-    const apiKey = "";
+    const apiKey = "jJjbFssbVLY0evvOTsSibXNMI1VMrtm4";
+    // const apiKey = "";
 
     const urlAPI = `http://api.giphy.com/v1/gifs/random?api_key=${apiKey}`;
     console.log(urlAPI);
