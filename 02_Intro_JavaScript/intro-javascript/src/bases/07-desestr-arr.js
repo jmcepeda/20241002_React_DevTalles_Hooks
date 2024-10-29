@@ -43,3 +43,25 @@ const [nombre, setNombre] = nardo("Tronco Rabo");
 console.log(nombre);
 
 setNombre();
+
+// Vamos ahora a hacer una función que desestructura un array
+
+const setArrat = (newChar) => {
+  return [...perDragonBall, newChar];
+};
+
+const newperDragonBall = setArrat("Bulma");
+
+console.log(newperDragonBall);
+
+const setArrat2 = (newChar) => [...perDragonBall, newChar];
+
+const newperDragonBall2 = setArrat2("RaboTron");
+
+console.log(newperDragonBall2);
+
+const setArrat3 = () => [...perDragonBall, "NardoTron"];
+
+const newperDragonBall3 = setArrat3();
+
+console.log(newperDragonBall3);
