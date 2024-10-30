@@ -1,9 +1,11 @@
+
+import PropTypes from "prop-types"
 import { useState } from "react"
 
 // import React from 'react';
-export const AddCategories = () => {
+export const AddCategories = ({setCategories,categories}) => {
 
-    const [InputValue, setInputValue] = useState("One Punch")
+    const [InputValue, setInputValue] = useState()
 
     // const onAddCategories=(e)=>{
     //     console.log(e)
@@ -18,6 +20,9 @@ export const AddCategories = () => {
     const onSubmit = (e)=>{
         console.log(InputValue)
         e.preventDefault()
+        if(InputValue.trim().length<1) return
+        setCategories([InputValue,...categories])
+        setInputValue("");
         // console.log("Agregando Categoría: ", InputValue)
     }
 
@@ -36,3 +41,7 @@ export const AddCategories = () => {
       )
 }
 
+AddCategories.propTypes = {
+  setCategories: PropTypes.func.isRequired,
+  categories: PropTypes.array.isRequired
+}

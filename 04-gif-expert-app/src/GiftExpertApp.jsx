@@ -13,15 +13,15 @@ export const GiftExpertApp = () => {
   // pero es posible hacerlo de forma diferente
   const [categories, setCategories] = useState(["OnePunch", "Dragon Ball"])
 
-  const onaddCategory = ()=> {
+  // const onaddCategory = ()=> {
 
-      // En las funciones SetCategories, lo que se trata no es modificar el estado actual sino definir un neuvo estado.
-      // Es por esto que se recomiend no usar .push
+  //     // En las funciones SetCategories, lo que se trata no es modificar el estado actual sino definir un neuvo estado.
+  //     // Es por esto que se recomiend no usar .push
 
-    // setCategories([...categories, "Naruto"]); // Añado una nueva categoría al estado de categories
-    setCategories(["Naruto",...categories, ]); 
+  //   // setCategories([...categories, "Naruto"]); // Añado una nueva categoría al estado de categories
+  //   setCategories(["Naruto",...categories, ]); 
 
-  }
+  // }
 
   console.log(categories)
 
@@ -32,9 +32,13 @@ export const GiftExpertApp = () => {
 
       {/* Input:  Entrada de datos y valores de Búsqueda  */}
       {/* <input type="text" name="add_character" id="addchar" /> */}
-      <AddCategories/>
+
+      {/* Hay varias maneras de mandar la properties a objeto hijo
+      Puede mandarse la referencia de la función  */}
+      <AddCategories setCategories={setCategories} categories={categories} />
       {/* Listado de Gif  */}
-      <button onClick={onaddCategory}>Agregar</button>
+      {/* No se en que punto se ha eliminado el Botón pero lo cierto es que se ha eliminado */}
+      {/* <button onClick={onaddCategory}>Agregar</button> */}
       <ol>
 
         {categories.map((category, index) => {
